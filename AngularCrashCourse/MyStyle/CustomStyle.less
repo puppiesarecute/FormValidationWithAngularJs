@@ -1,0 +1,67 @@
+﻿@menuBackground: #efefef;
+
+.side-menu {
+  background-color: @menuBackground;
+  width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .my-content {
+    padding-left: 300px;
+  }
+}
+
+.side-menu {
+  background-color: @menuBackground;
+  width: 300px;
+
+  h3 {
+    font-weight: 200;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+
+ h3:hover {
+    background-color: #cfcfcf;
+  }
+  
+
+ i {
+    
+min-width: 50px;
+    text-align: center;
+  }
+}
+
+label {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.block-section {
+    margin-top: 8em;
+}
+
+.text-margin {
+    margin-left: 300px;
+}
+
+  /* This style should explicitly set your navbar to a certain height */
+  .navbar, .navbar div, .navbar-brand, .navbar-header {
+     background-color: white;
+     /*margin-bottom: 5px;*/
+     padding-top: 5px;
+     padding-bottom: 5px;
+  }
+
+  error {
+      font-size:small;
+      color: red;
+  }

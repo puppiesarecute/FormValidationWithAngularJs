@@ -1,0 +1,9 @@
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\bin\AngularCrashCourse.dll.config
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\bin\AngularCrashCourse.dll
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\bin\AngularCrashCourse.pdb
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\bin\AngularCrashCourse.xml
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\obj\Debug\AngularCrashCourse.Resources.resources
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\obj\Debug\AngularCrashCourse.vbproj.GenerateResource.Cache
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\obj\Debug\AngularCrashCourse.dll
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\obj\Debug\AngularCrashCourse.xml
+C:\Users\Ai\Documents\Visual Studio 2013\Projects\AngularCrashCourse\AngularCrashCourse\obj\Debug\AngularCrashCourse.pdb

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Examples</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/jasny-bootstrap.min.css" rel="stylesheet" />
+    <link href="../MyStyle/StyleSheet1.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <!--bootstrap min is a minified version of bootstrap where it removes all whitespace and other compression technique, to reduce the file size-->
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/jasny-bootstrap.js"></script>
+</head>
+<body>
+    <nav class="top-menu hidden-lg">
+        <div data-toggle="offcanvas" data-target=".side-menu" data-canvas="body">
+            Menu
+        </div>
+    </nav>
+    <nav class="side-menu offcanvas-xs offcanvas-sm offcanvas-md navmenu-fixed-left" role="navigation">
+        <div>
+            <h3>
+                <i class="fa fa-area-chart">Reports</i> 
+            </h3>
+            
+        </div>
+        
+    </nav>
+    <div class="panel my-content">
+        <h3 class="panel-header">
+            Form Elements
+        </h3>
+        <div class="form-group">
+            <label>Name:</label>
+            <input name="name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input name="email" class="form-control" />
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="junkmail" value="yes" checked />
+                Yes, send me endless junk mail
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="junkmail" value="no" />
+                No, I never want to hear from you again
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" />
+                I agree to the terms and conditions.
+            </label>
+        </div>
+        <input type="button" class="btn btn-primary" value="Subscribe" />
+    </div>
+</body>
+</html>

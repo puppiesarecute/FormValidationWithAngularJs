@@ -1,0 +1,10 @@
+﻿.side-menu {
+  background-color: #f16651;
+  width: 300px;
+}
+@media (min-width: 1200px) {
+  .my-content {
+    padding-left: 300px;
+  }
+}
+/*# sourceMappingURL=StyleSheet1.css.map */

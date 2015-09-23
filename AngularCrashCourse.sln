@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AngularCrashCourse", "AngularCrashCourse\AngularCrashCourse.vbproj", "{78DFBE09-72C6-4ABF-9077-F35FD8E4E716}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66313D9B-1EE7-4FCA-8F5A-3F178CBA7C97}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials-Settings.json = WebEssentials-Settings.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78DFBE09-72C6-4ABF-9077-F35FD8E4E716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DFBE09-72C6-4ABF-9077-F35FD8E4E716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DFBE09-72C6-4ABF-9077-F35FD8E4E716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DFBE09-72C6-4ABF-9077-F35FD8E4E716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
