@@ -49,8 +49,13 @@ label {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-error {
-  font-size: small;
+input.ng-invalid {
+  border: 1px solid red;
+}
+input.ng-valid {
+  border: 1px solid green;
+}
+small {
   color: red;
 }
 /*# sourceMappingURL=CustomStyle.css.map */
