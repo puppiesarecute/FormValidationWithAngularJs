@@ -97,9 +97,16 @@
     <Content Include="Day1\Day1Index.html" />
     <Content Include="Day1\KeaForm.html" />
     <Content Include="Day1\NavigationMenu.html" />
+    <Content Include="Day1\PartialViews\AllInternships.html" />
+    <Content Include="Day1\PartialViews\FormInput.html" />
+    <Content Include="Day1\PartialViews\Subview1.html" />
+    <Content Include="Day1\PartialViews\Subview2.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\controllers\AllInternshipController.js" />
     <Content Include="js\controllers\InternshipDataEntryController.js" />
+    <Content Include="js\controllers\TopLevelController.js" />
+    <Content Include="js\navigation.js" />
     <Content Include="MyStyle\CustomStyle.css">
       <DependentUpon>CustomStyle.less</DependentUpon>
     </Content>
@@ -115,6 +122,8 @@
     </Content>
     <Content Include="Resources\lille_logo_en.png" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -138,6 +147,8 @@
       <DependentUpon>CustomStyle.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\AngularUI\ui-router.js" />
+    <Content Include="Scripts\AngularUI\ui-router.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />

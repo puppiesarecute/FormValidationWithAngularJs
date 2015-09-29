@@ -1,0 +1,33 @@
+﻿<div>
+    <div>
+        <button class="btn btn-primary" ui-sref="new-internship">
+            Create New Internship
+        </button>
+    </div>
+    
+    <div class="col-xs-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Initials</th>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="visit in internshipVisits track by $index">
+                <tr ng-click="editInternship(visit)">
+                    <td>{{visit.initials}}</td>
+                    <td>{{visit.studentId}}</td>
+                    <td>{{visit.studentName}}</td>
+                    <td>{{visit.date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <button class="btn btn-default" ui-sref="all-internships.subview1">Subview 1</button>
+        <button class="btn btn-default" ui-sref="all-internships.subview2">Subview 2</button>
+    </div>
+</div>

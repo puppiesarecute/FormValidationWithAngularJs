@@ -1,14 +1,17 @@
 ﻿var app = angular.module("internship");
-app.controller("internshipDataEntryController", function ($scope) {
-    $scope.visit = {};
+app.controller("internshipDataEntryController", function ($scope, $state, $stateParams) {
+    $scope.visit = $stateParams.internship;
+
     $scope.saveVisit = function () {
         if ($scope.visitForm.$valid) {
-            alert("Yes!");
+            //$scope.visit.id = $scope.parent.internshipVisits.length + 1;
+            console.log($scope.visit.studentId);
+            $scope.$parent.internshipVisits.push(
+                $scope.visit);
+            $state.go("all-internships");
+         }
+        else {            
         }
-        else {
-            //alert("Not valid!");
-        }
-        console.log($scope.visit);
-        //$scope.visit.initials = "Frank is a nerd";
+        
     };
 });
