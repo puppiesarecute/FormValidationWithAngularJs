@@ -7,7 +7,8 @@
         { id: "@id" }, { update: { method: "PUT" }});
 
         $scope.internshipVisits = $scope.internshipResource.query();
-
+        $scope.$parent.internshipVisits = $scope.internshipVisits;
+        //console.log($scope.$parent.internshipVisits);
         //update:
         //new $scope.internshipResource($scope.visit).$supdate({ id: $scope.visit._id }, function () {
             // update the data or ....

@@ -1,11 +1,12 @@
 ﻿var app = angular.module("internship");
 app.controller("internshipDataEntryController", function ($scope, $state, $stateParams, $resource) {
-    console.log($scope.internshipVisits);
+    //console.log($scope.internshipVisits);
+    // create a copy of the internship passed to the view
     $scope.visit = angular.copy($stateParams.internship);
 
     $scope.saveVisit = function () {
         if ($scope.visitForm.$valid) {
-
+            // if the scope visit id is undefined: create new internship, 
             if ($scope.visit._id === undefined) {
                 var thisVisit = $scope.visit;
                 new $scope.internshipResource(thisVisit).$save(function () {
@@ -13,27 +14,28 @@ app.controller("internshipDataEntryController", function ($scope, $state, $state
                     $scope.$parent.internshipVisits.push(
                         $scope.visit);
                     $state.go("all-internships");
+                    console.log($scope.$parent.internshipVisits);
                 });                
             }
+            // else: update existing internship
             else {
                 new $scope.internshipResource($scope.visit).$update({ id: $scope.visit._id }, function () {
                     alert("Entry has been updated!");
 
-                    //update for local array
-                    //var index = _.findIndex($scope.$parents.internshipVisits,
-                    //    {
-                    //        id: $scope.visit._id
-                    //    });
-                    //$scope.$parents.splice(index, 1,$scope.visit);
+                    // update for local array
+                    console.log($scope.$parent.internshipVisits);
+                    var index = _.indexOf($scope.$parent.internshipVisits, $stateParams.internship);
+
+                    console.log("Index is " + index);
+                    $scope.$parent.internshipVisits.splice(index, 1, $scope.visit);
                     $state.go("all-internships");
                 });
-            }           
+            }         
             
          }
         else {
             alert("Form not valid, please review");
-        }
-        
+        }        
     };
 
     $scope.deleteVisit = function () {
