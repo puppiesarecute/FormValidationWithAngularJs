@@ -8,6 +8,8 @@
 
         $scope.internshipVisits = $scope.internshipResource.query();
         $scope.$parent.internshipVisits = $scope.internshipVisits;
+        //_.sortBy($scope.internshipVisits, 'initials');
+        //_.sortBy($scope.$parent.internshipVisits, 'initials');
         //console.log($scope.$parent.internshipVisits);
         //update:
         //new $scope.internshipResource($scope.visit).$supdate({ id: $scope.visit._id }, function () {

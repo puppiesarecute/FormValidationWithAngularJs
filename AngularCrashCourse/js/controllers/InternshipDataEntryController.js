@@ -39,6 +39,22 @@ app.controller("internshipDataEntryController", function ($scope, $state, $state
     };
 
     $scope.deleteVisit = function () {
+        if ($scope.visit._id === undefined) {
+            alert("Nothing to delete. Is something wrong?");
+        }
+        else {
+            new $scope.internshipResource($scope.visit).$remove({ id: $scope.visit._id }, function () {
+                alert("Remove sucessfull!");
+
+                // update for local array
+                console.log($scope.$parent.internshipVisits);
+                var index = _.indexOf($scope.$parent.internshipVisits, $stateParams.internship);
+
+                console.log("Index is " + index);
+                $scope.$parent.internshipVisits.splice(index, 1);
+                $state.go("all-internships");
+            });
+        }
         // send a request to api to delete
         // in scucess function, delete the delted object
         // id = 4

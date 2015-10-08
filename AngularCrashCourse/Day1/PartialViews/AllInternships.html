@@ -15,7 +15,7 @@
                     <th>Date</th>
                 </tr>
             </thead>
-            <tbody ng-repeat="visit in internshipVisits"> <!--track by $index">-->
+            <tbody ng-repeat="visit in internshipVisits | orderBy: 'initials'">
                 <tr ng-click="editInternship(visit)">
                     <td>{{visit.initials}}</td>
                     <td>{{visit.studentId}}</td>
