@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <label>Date</label>
+            <!--<label>Date</label>
             <input type="date" class="form-control" ng-model="visit.date" name="date" placeholder="yyyy-MM-dd"
                    min="2013-01-01" max="2017-12-31" required />
             <div class="error"
@@ -37,7 +37,9 @@
                 <small class="error" ng-show="visitForm.date.$error.min || visitForm.date.$error.max">
                     Date cannot be earlier than 2013 and later than 2017.
                 </small>
-            </div>
+            </div>-->
+            <label>Date</label>
+            <input type="text" class="form-control" ng-model="visit.date" name="date" placeholder="yyyy-MM-dd"/>
         </div>
     </div>
     <div class="form-group">

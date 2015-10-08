@@ -3,6 +3,8 @@
         console.log("Hi from All internship");
 
         $scope.editInternship = function (visit) {
+
+            //console.log($scope.visit); undefined
             $state.go("new-internship", { internship: visit });
         };
     });

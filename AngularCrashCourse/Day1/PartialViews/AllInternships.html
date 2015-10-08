@@ -15,7 +15,7 @@
                     <th>Date</th>
                 </tr>
             </thead>
-            <tbody ng-repeat="visit in internshipVisits track by $index">
+            <tbody ng-repeat="visit in internshipVisits"> <!--track by $index">-->
                 <tr ng-click="editInternship(visit)">
                     <td>{{visit.initials}}</td>
                     <td>{{visit.studentId}}</td>
@@ -30,4 +30,5 @@
         <button class="btn btn-default" ui-sref="all-internships.subview1">Subview 1</button>
         <button class="btn btn-default" ui-sref="all-internships.subview2">Subview 2</button>
     </div>
+    <div ui-view></div>
 </div>
