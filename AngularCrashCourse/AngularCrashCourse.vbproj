@@ -102,12 +102,14 @@
     <Content Include="Day1\PartialViews\FormInput.html" />
     <Content Include="Day1\PartialViews\Subview1.html" />
     <Content Include="Day1\PartialViews\Subview2.html" />
+    <Content Include="Day2\FilterStartingPoint.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="js\controllers\AllInternshipController.js" />
     <Content Include="js\controllers\InternshipDataEntryController.js" />
     <Content Include="js\controllers\NotUsed.js" />
     <Content Include="js\controllers\TopLevelController.js" />
+    <Content Include="js\CustomFilters.js" />
     <Content Include="js\navigation.js" />
     <Content Include="MyStyle\CustomStyle.css">
       <DependentUpon>CustomStyle.less</DependentUpon>

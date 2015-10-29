@@ -6,21 +6,35 @@
     </div>
     
     <div class="col-xs-12">
+        <div class="pull-right">
+            <h2 class="label label-warning">View Limit:</h2>
+            <select ng-options="item for item in viewRange" ng-model="limitItem"></select>
+        </div>  
+        <div class="pull-right">
+            <h2 class="label label-warning">Student</h2>
+            <select ng-options="item for item in studentNameList" ng-model="studentName"></select>
+        </div>         
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Initials</th>
                     <th>Student ID</th>
                     <th>Student Name</th>
+                    <th>Visit ID</th>
+                    <th>Company Competency</th>
                     <th>Date</th>
+                    <th>Company Cooperation</th>                    
                 </tr>
             </thead>
-            <tbody ng-repeat="visit in internshipVisits | orderBy: 'initials'">
+            <tbody ng-repeat="visit in internshipVisits | limitTo: limitItem | orderBy: 'initials'">
                 <tr ng-click="editInternship(visit)">
                     <td>{{visit.initials}}</td>
                     <td>{{visit.studentId}}</td>
                     <td>{{visit.studentName}}</td>
-                    <td>{{visit.date}}</td>
+                    <td>{{visit._id}}</td>
+                    <td>{{visit.companyCompetencies}}</td>
+                    <td>{{visit.date | date : 'dd-MM-yyyy'}}</td>
+                    <td>{{visit.companyCooperation}}</td>
                 </tr>
             </tbody>
         </table>

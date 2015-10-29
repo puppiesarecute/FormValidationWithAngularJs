@@ -55,19 +55,5 @@ app.controller("internshipDataEntryController", function ($scope, $state, $state
                 $state.go("all-internships");
             });
         }
-        // send a request to api to delete
-        // in scucess function, delete the delted object
-        // id = 4
-        // for loop
-        // if sentence: look for the id 4
-        // splice(index,1)
-
-        ////require installing underscore library to do this
-
-        //var index = _.findIndex($scope.$parents.internshipVisits,
-        //    {
-        //        id: $scope.visit._id
-        //    });
-        //$scope.$parents.splice(index, 1);
     }
 });
